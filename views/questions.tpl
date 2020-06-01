@@ -78,6 +78,20 @@
 						text_table += '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + attribute.val_med[ii] + '_' + ii + '">Assess</button>' + '</td></tr>';
 					};
 				};
+			} else if (attribute.method == "CE_Variable_Prob") {
+				for (var key in attribute.questionnaire.points){
+					text_table += '<tr><td>-</td><td> : </td>'+
+								  '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + ii + '_' + ii + '">Assess</button>' + '</td></tr>';
+					
+				};
+				
+				for (var ii=Object.keys(attribute.questionnaire.points).length; ii<3; ii++){
+					text_table += '<tr><td>' + key + '</td><td> : </td>'+
+								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
+					
+				};
+			}; 
+			
 			} else {
 				for (var key in attribute.questionnaire.points){
 					text_table += '<tr><td>' + key + '</td><td> : </td>'+
@@ -554,13 +568,14 @@
 							console.log(final_gain);
 							if (final_gain <= parseFloat(arbre_cepv.questions_val_max) && final_gain >= parseFloat(arbre_cepv.questions_val_min)) {
 								// we save it
+								assess_session.attributes[indice].questionnaire.points[String(final_gain)]=parseFloat(final_utility);
+
 								console.log(assess_session.attributes[indice].questionnaire.points)
 								var  point_cepv= Object.keys(assess_session.attributes[indice].questionnaire.points).length-1
 								var  number_cepv = assess_session.attributes[indice].questionnaire.number
 								console.log( point_cepv)
 								console.log( number_cepv)
 								if ( point_cepv == number_cepv ){
-									assess_session.attributes[indice].questionnaire.points[String(final_gain)]=parseFloat(final_utility);
 
 									assess_session.attributes[indice].questionnaire.number += 1;
 								}
