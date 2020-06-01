@@ -78,32 +78,18 @@
 						text_table += '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + attribute.val_med[ii] + '_' + ii + '">Assess</button>' + '</td></tr>';
 					};
 				};
-			}
-			if (attribute.method == "CE_Variable_Prob") {
+			} else {
 				for (var key in attribute.questionnaire.points){
-					text_table += '<tr><td>-</td><td> : </td>'+
-								  '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + ii + '_' + ii + '">Assess</button>' + '</td></tr>';
-					
+					text_table += '<tr><td>' + key + '</td><td> : </td>'+
+								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
 				};
 				
 				for (var ii=Object.keys(attribute.questionnaire.points).length; ii<3; ii++){
-					text_table += '<tr><td>' + key + '</td><td> : </td>'+
-								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
-					
-				};
-			}; 
-			
-			if (attribute.method == "CE_Constant_Prob" ) {
-				for (var ii=Object.keys(attribute.questionnaire.points).length; ii<3; ii++){
-
-					text_table += '<tr><td>' + key + '</td><td> : </td>'+
-								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
-				};
-				for (var key in attribute.questionnaire.points){
 					text_table += '<tr><td>-</td><td> : </td>'+
 								  '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + ii + '_' + ii + '">Assess</button>' + '</td></tr>';
 				};
 			}; 
+			 
 			
 			text_table += '<tr><td>' + attribute.val_max + '</td><td> : </td><td>'+(attribute.mode=="Normal"?1:0)+'</td></tr></table></td>';
 
