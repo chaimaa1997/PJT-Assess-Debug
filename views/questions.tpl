@@ -93,7 +93,7 @@
 				};
 			}; 
 			
-			} else {
+			if (attribute.method == "CE_Constant_Prob" ) {
 				for (var key in attribute.questionnaire.points){
 					text_table += '<tr><td>' + key + '</td><td> : </td>'+
 								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
