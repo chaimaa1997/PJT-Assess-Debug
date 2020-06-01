@@ -78,7 +78,8 @@
 						text_table += '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + attribute.val_med[ii] + '_' + ii + '">Assess</button>' + '</td></tr>';
 					};
 				};
-			} else if (attribute.method == "CE_Variable_Prob") {
+			}
+			if (attribute.method == "CE_Variable_Prob") {
 				for (var key in attribute.questionnaire.points){
 					text_table += '<tr><td>-</td><td> : </td>'+
 								  '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + ii + '_' + ii + '">Assess</button>' + '</td></tr>';
