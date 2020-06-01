@@ -94,12 +94,12 @@
 			}; 
 			
 			if (attribute.method == "CE_Constant_Prob" ) {
-				for (var key in attribute.questionnaire.points){
+				for (var ii=Object.keys(attribute.questionnaire.points).length; ii<3; ii++){
+
 					text_table += '<tr><td>' + key + '</td><td> : </td>'+
 								  '<td>' + attribute.questionnaire.points[key] + '</td></tr>';
 				};
-				
-				for (var ii=Object.keys(attribute.questionnaire.points).length; ii<3; ii++){
+				for (var key in attribute.questionnaire.points){
 					text_table += '<tr><td>-</td><td> : </td>'+
 								  '<td><button type="button" class="btn btn-default btn-xs answer_quest_'+(attribute.type=="Qualitative"?"quali":"quanti")+'" id="q_' + attribute.name + '_' + ii + '_' + ii + '">Assess</button>' + '</td></tr>';
 				};
