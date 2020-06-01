@@ -477,11 +477,11 @@
 					// VARIABLES
 					var min_interval = val_min;
 					var max_interval = val_max;
-					if (assess_session.attributes[indice].questionnaire.number == 0) {
+					if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 0) {
 						p = 0.25;
-					} else if (assess_session.attributes[indice].questionnaire.number == 1) {
+					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 1) {
 						p = 0.5;
-					} else if (assess_session.attributes[indice].questionnaire.number == 2) {
+					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 2) {
 		                 		p = 0.75;
 					}
 
