@@ -564,7 +564,7 @@
 									assess_session.attributes[indice].questionnaire.number += 1;
 								}
 								console.log( point_cepv)
-								console.log( number_cepv)
+								console.log( assess_session.attributes[indice].questionnaire.number )
 								// backup local
 								//localStorage.setItem("assess_session", JSON.stringify(assess_session));
 								// we reload the page
