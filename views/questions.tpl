@@ -436,7 +436,15 @@
 							if (final_gain <= parseFloat(arbre_ce.questions_val_max) && final_gain >= parseFloat(arbre_ce.questions_val_min)) {
 								// we save it
 								assess_session.attributes[indice].questionnaire.points[String(final_gain)]=parseFloat(final_utility);
-								assess_session.attributes[indice].questionnaire.number += 1;
+								var  point_cepv= Object.keys(assess_session.attributes[indice].questionnaire.points).length-1
+								var  number_cepv = assess_session.attributes[indice].questionnaire.number
+								console.log( point_cepv)
+								console.log( number_cepv)
+								if ( point_cepv == number_cepv ){
+
+									assess_session.attributes[indice].questionnaire.number += 1;
+								}
+								
 								// backup local
 								localStorage.setItem("assess_session", JSON.stringify(assess_session));
 								// we reload the page
