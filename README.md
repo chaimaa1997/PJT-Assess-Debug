@@ -207,7 +207,7 @@ style='font-size:10.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman"
 href="https://assess2.herokuapp.com/"><span style='font-size:11.5pt;font-family:
 Arial;mso-bidi-font-family:"Times New Roman";color:black'> </span><span
 style='font-size:11.5pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
-color:#1155CC'>https://assess2.herokuapp.com/</span></a></span><span
+color:#1155CC'>https://assess-online.herokuapp.com/</span></a></span><span
 style='font-size:11.5pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
 color:black'> pour voir le rendu du projet</span><span style='font-size:10.0pt;
 font-family:Times;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
