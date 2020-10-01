@@ -239,7 +239,7 @@ font-family:Times;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></spa
  <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo15;tab-stops:
      list 36.0pt;vertical-align:baseline'><span style='font-size:11.5pt;
      font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Sur <span
-     class=SpellE>heroku</span> http://assess2.herokuapp.com<o:p></o:p></span></li>
+     class=SpellE>heroku</span> https://assess-online.herokuapp.com/<o:p></o:p></span></li>
 </ul>
 
 <p class=MsoNormal><span style='font-size:11.5pt;font-family:Arial;mso-fareast-font-family:
