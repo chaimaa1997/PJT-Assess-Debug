@@ -204,7 +204,7 @@ color:#1155CC'>https://github.com/leosayous21/asses</span></a><o:p></o:p></span>
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:11.5pt;
 font-family:Arial;mso-bidi-font-family:"Times New Roman";color:black'>Aller sur</span><span
 style='font-size:10.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman"'><a
-href="https://assess2.herokuapp.com/"><span style='font-size:11.5pt;font-family:
+href="https://assess-online.herokuapp.com/"><span style='font-size:11.5pt;font-family:
 Arial;mso-bidi-font-family:"Times New Roman";color:black'> </span><span
 style='font-size:11.5pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
 color:#1155CC'>https://assess-online.herokuapp.com/</span></a></span><span
@@ -397,12 +397,12 @@ style='font-size:10.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman"
 qui sont appelées par website.py lorsque l’on fait une <span class=SpellE>requète</span>
 du style &nbsp;</span><span style='font-size:10.0pt;font-family:Times;
 mso-bidi-font-family:"Times New Roman"'><a
-href="http://assess2.herokuapp.com/questions"><span style='font-size:11.5pt;
+href="https://assess-online.herokuapp.com/questions"><span style='font-size:11.5pt;
 font-family:Arial;mso-bidi-font-family:"Times New Roman";color:#1155CC'>https://assess-online.herokuapp.com/questions</span></a></span><span
 style='font-size:11.5pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
 color:black'> ou </span><span style='font-size:10.0pt;font-family:Times;
 mso-bidi-font-family:"Times New Roman"'><a
-href="http://assess2.herokuapp.com/exports"><span style='font-size:11.5pt;
+href="https://assess-online.herokuapp.com//exports"><span style='font-size:11.5pt;
 font-family:Arial;mso-bidi-font-family:"Times New Roman";color:#1155CC'>https://assess-online.herokuapp.com/exports</span></a></span><span
 style='font-size:11.5pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
 color:black'> </span><span style='font-size:10.0pt;font-family:Times;
